@@ -1,0 +1,140 @@
+{
+  "abort-controller-api": {
+    "title": "Abort controller api(終止控制器)",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "eventHandlers&stateManagement": {
+    "title": "Js - 事件處理與狀態管理",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "construct": {
+    "title": "Js - 建構函數(construct) & 實例化 & 實例方法 & 靜態方法",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "closure-1": {
+    "title": "Js - 閉包(Closure)",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "closure-2": {
+    "title": "Js - 閉包(Closure)-2",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "rest-params": {
+    "title": "Js - 剩餘參數 & 展開運算符",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "hosting-1": {
+    "title": "Js - 提升(Hosting)-1",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "hosting-2": {
+    "title": "Js - 提升(Hosting)-2",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "destructuring-assignment": {
+    "title": "Js - 解構函數(array)、對象解構(obj)",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "data-structure": {
+    "title": "Js - 資料結構、應用場景",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "ajax": {
+    "title": "AJAX",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "arrow-function": {
+    "title": "Js - array function",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "array-HOC": {
+    "title": "Js - Array高階函數",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "async&await&Promise": {
+    "title": "Js - Async&await&Promise",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "class-prefix": {
+    "title": "class的前綴語法(實現封裝)",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "for-loop": {
+    "title": "Js - for迴圈",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "IIFE&module": {
+    "title": "Js - IIFE(立即執行函數) , module(模組化)",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "map&filter": {
+    "title": "Js - filter",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "this&prototype": {
+    "title": "Js -This & 原型",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "regular-expression": {
+    "title": "Js- 正則表達式",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "lifeCycle": {
+    "title": "Js- 生命週期(垃圾回收)",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "params&_call&_apply": {
+    "title": "Js- 實體參數 & 形式參數 & _call & _apply & Argument",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "transformation-ratio": {
+    "title": "Js中自動轉型的比重",
+    "theme": {
+      "layout": "full"
+    }
+  }
+}

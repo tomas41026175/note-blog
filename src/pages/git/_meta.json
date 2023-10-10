@@ -1,0 +1,14 @@
+{
+	"local-to-empty-remote": {
+		"title": "將本地有資料的資料夾同步至空的資料庫",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Git-Command": {
+		"title": "Git Command",
+		"theme": {
+			"layout": "full"
+		}
+	}
+}

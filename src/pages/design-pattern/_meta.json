@@ -1,0 +1,26 @@
+{
+	"design-pattern": {
+		"title": "設計模式(design pattern)",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"design-pattern-inFE": {
+		"title": "設計模式在前端中的應用",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"DDD": {
+		"title": "領域驅動設計(DDD)",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"design-pattern-inFP": {
+		"title": "FP中常見的design pattern",
+		"theme": {
+			"layout": "full"
+		}
+	}
+}

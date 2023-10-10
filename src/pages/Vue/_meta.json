@@ -1,0 +1,92 @@
+{
+	"JSX&TSX-inVue": {
+		"title": "在Vue中使用JSX & TSX",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"intro-1": {
+		"title": "前端框架 Vue (1) 基本介紹",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"intro-2": {
+		"title": "前端框架 Vue (2) 指令觀念前導",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"intro-3": {
+		"title": "前端框架 Vue (3) 渲染文字內容",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"slot": {
+		"title": "Vue-slot(插槽)",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"lifeCircle-diff-in-Vue2&3": {
+		"title": "Vue2 & Vue3 生命週期差異",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"diff-in-vue2&3": {
+		"title": "Vue2跟Vue3的差異",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Vue3-life&template": {
+		"title": "Vue3 - 生命週期與模板引用",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Vue3-v-for&computed": {
+		"title": "Vue3 - 列表渲染(迴圈)(v-for) , 計算屬性(computed)",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Vue3-watch": {
+		"title": "Vue3 - 監聽器(watch),Props,Emits",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Vue3-ref&reactive": {
+		"title": "Vue3 - 響應式狀態(ref,reactive)",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Vue3-sugarMethod": {
+		"title": "Vue3 - Attribute綁定(v-bind) & 事件監聽(v-on)&雙向綁定(v-model)&條件渲染(v-if)",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Vue3-props&v-props": {
+		"title": "Vue3 - Component中使用 v-語法糖 , props",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Vue3-component": {
+		"title": "Vue3 - Component(元件)",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Vue3-v-props": {
+		"title": "Vue常用語法糖",
+		"theme": {
+			"layout": "full"
+		}
+	}
+}

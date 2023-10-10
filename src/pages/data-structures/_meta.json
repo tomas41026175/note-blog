@@ -1,0 +1,20 @@
+{
+	"Euler": {
+		"title": "尤拉",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"DAG": {
+		"title": "DAG(有向無環圖)",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Hash": {
+		"title": "Hash雜湊",
+		"theme": {
+			"layout": "full"
+		}
+	}
+}

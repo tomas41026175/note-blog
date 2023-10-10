@@ -1,0 +1,44 @@
+{
+	"next13&before": {
+		"title": "next13&oldVer",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"addImage-in-next": {
+		"title": "在NEXT中添加圖片的兩種方式",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"addCSS-in-next": {
+		"title": "在NEXT中添加CSS的方式",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"add-sass-module": {
+		"title": "添加module.sass",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Layout": {
+		"title": "佈局(Layout)",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"app-router": {
+		"title": "app router",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Next13-newFeature": {
+		"title": "NEXT13更新之處",
+		"theme": {
+			"layout": "full"
+		}
+	}
+}

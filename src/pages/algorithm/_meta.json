@@ -1,0 +1,26 @@
+{
+	"complex": {
+		"title": "演算法 - 複雜度",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"type&road": {
+		"title": "演算法 - 類型 & road",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Design-method": {
+		"title": "演算法 - Design method",
+		"theme": {
+			"layout": "full"
+		}
+	},
+	"Big(O)-Notition": {
+		"title": "演算法 - Big(O) Notition",
+		"theme": {
+			"layout": "full"
+		}
+	}
+}
