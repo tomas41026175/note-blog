@@ -5,12 +5,12 @@
 ```
 npx create-next-app --example with-turbopack
 ```
-![Alt text](./image-2.png)
+![Alt text](/image-2.png)
 
 這是啟動後的界面，這個 demo 不是一個簡單的頁面，而是一個包含了深度嵌套路由的例子。
 
 下圖我開發時的截圖，Turbopack 直接在命令行中打印出了構建時間，我們看到啟動時間只需要 2.3ms
-![Alt text](./image-3.png)
+![Alt text](/image-3.png)
 
 試著修改代碼，程序會自動熱更新，絕大多數次數更新時間都很快，但偶爾有幾次更新時間卻很長，圖片中有一處需要 16s（我使用的是 Mac M1)，這其中的原因就不得而知了，尤大也發布了測評，使用 1000 個節點來對比更新速度，數據顯示：根組件與 vite 時間幾乎相同，葉子節點比 vite 快 68%，與官方稱比 vite 快 10 倍相差甚遠。當然目前 Turbopack 還處於 alpha 階段，期待 Turbopack 能夠盡快推出正式版。
 
@@ -26,9 +26,9 @@ Esbuild 是一個非常快速的打包工具，但它並沒有做太多的緩存
 
 ##　為什麽要改基於文件的路由系統
 Next 13 另一個比較大的改動是基於文件的路由系統，增加了一個 app 目錄，每一層路由必須建一個文件夾，在該文件夾中建立 page.tsx 作為該路由主頁面
-![Alt text](./image-4.png)
+![Alt text](/image-4.png)
 而在 Next.js 12（以及以下）對應的路由系統，是所有路由文件都寫在 pages 目錄下，每個文件都會生成一個路由，很明顯是這種方式更加簡潔。
-![Alt text](./image-5.png)
+![Alt text](/image-5.png)
 那麽，Next.js 為什麽要改基於文件的路由系統呢？
 主要有以下 3 點原因:
 
@@ -41,7 +41,7 @@ Tailwindcss 的作者 Adam Wathan 早在 2019 年就寫過一篇博客，關於 
 -https://link.juejin.cn/?target=https%3A%2F%2Fadamwathan.me%2F2019%2F10%2F17%2Fpersistent-layout-patterns-in-nextjs%2F
 
 其中有個demo能夠很好的說明 next.js 不能實現持久化緩存，大家可以在 codesandbox 中體驗。
-![Alt text](./image-6.png)
+![Alt text](/image-6.png)
 
 實現方式是每個 page 頁面直接引用 components 文件下的導航組件，當點擊橫向滾動條後面的導航頁面，會導致整個頁面都刷新，從而沒有記錄滾條的位置。
 他解決辦法是，需要通過往 Page 頁面函數上添加靜態方法getLayout來實現，詳情代碼可以看這個例子。
@@ -103,7 +103,7 @@ Next13 新增了 app 文件夾 來實現**約定式路由**，完美地實現了
 │   └── template.tsx
 ```
 對應的頁面效果如下圖
-![Alt text](./image-7.png)
+![Alt text](/image-7.png)
 
 我們看到每個文件下都有 3 個文件 layout.tsx、page.tsx 、template.tsx、
 
@@ -136,8 +136,8 @@ app 同層級目錄下還支持多個 layout， 使用 （文件夾）區分，�
 ```
 
 比如官方 playground 中關於電子商務的例子，main 和 checkout 的 layout 是不同的，可以根據實現功能自定義分組代碼目錄。
-![Alt text](./image-8.png)
-![Alt text](./image-9.png)
+![Alt text](/image-8.png)
+![Alt text](/image-9.png)
 
 ### React Server Components
 在 app 目錄下的組件默認都是 **React Server Components**，那麽 React Server Components 有什麽優勢呢？
@@ -151,7 +151,7 @@ SSR：數據在服務端請求，通過 renderToString 方法將字符串 DOM �
 
 
 SSR 解決了白屏時間過長的問題和 SEO 的問題，但也並不是完美的，過多的請求會導致服務端響應時間變長，“注水”（Hydrate）的過程也會導致客戶端代碼量的增加。
-![Alt text](./image-10.png)
+![Alt text](/image-10.png)
 
 比如一個傳統的博客頁面采用 Next12 的方式使用```getServerSideProps``` 的方式渲染，那麽就需要等 3 個接口全部返回才可以看到頁面。
 ```
@@ -198,7 +198,7 @@ return  (
   </Layout>
 )
 ```
-![Alt text](./image-11.png)
+![Alt text](/image-11.png)
 如圖所示
 
 灰色部分代表 HTML 字符串返回
@@ -213,7 +213,7 @@ loading 狀態表示當前部分還在請求
 ，而 Next.js 13 只需要在 app 目錄下，按照約定的文件名稱寫，就可以自動實現 React Server Components。
 
 ### 實現流渲染
-![Alt text](./image-12.png)
+![Alt text](/image-12.png)
 除了 app 目錄下嵌套路由部分 next.js 會幫我們默認采用 React Server Components，我們在 page 頁面中，也可以實現。
 實現方式也很簡單，組件外層使用 ```Suspense```
 ```
@@ -256,7 +256,7 @@ export default function Description() {
 ```
 ### 使用場景
 從官方的 playground 中看，在一些請求較慢的接口，比如電商網站中的價格計算，若要使用服務端渲染，就可以使用 server Component。
-![Alt text](./image-13.png)
+![Alt text](/image-13.png)
 
 ### 服務端組件和客戶端組件
 Next.js 最大的優勢就是我們只需要一個工程，就可以搞定前端工程和後端工程，哪些是前端代碼和哪些是後端代碼，Next.js 在打包的時候就會幫我們自動區分，這需要開發者清楚地理解，自己寫的代碼哪些是在服務端執行，哪些是在客戶端執行。
@@ -306,7 +306,7 @@ const DynamicHeader = dynamic(() => import('../components/header'), {
 在 Next13 中 ， 在 app 目錄下，如要使用 useState 等狀態管理的 hook，那麽該組件只在客戶端執行，需要在首行加入 'use client' 指令。
 
 該區分服務端組件和客戶端組件，下表列出了常用使用場景
-![Alt text](./image-14.png)
+![Alt text](/image-14.png)
 
 ### 數據請求
 使用 react 的 use 函數加 fetch API 來實現：靜態站點生成（SSG）、服務器端渲染（SSR）和增量靜態再生（ISR）

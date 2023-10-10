@@ -37,7 +37,7 @@
   - 異步動態加載組件，和 React.lazy 功能一樣，只不過實現得更早。
 
 基本上使用了 Next.js 你不需要再去處理工程化相關事項。也可以通過很簡單的方式去優化打包性能，且每次構建都會輸出頁面資源大小信息，如下圖所示：
-![Alt text](./image.png)
+![Alt text](/image.png)
 
 - 良好的開發和構建性能
   - next.js 使用 turbopack 進行編譯打包(windows上可能有效能問題)
@@ -115,7 +115,7 @@ Next.js 除了頁面默認靜態化（不使用getServerSideProps/getStaticPath/
 
 - 談談 React 單頁應用
   -  React 官方文檔現在也在推薦其他的搭建方案，比如 Next.js 和 Gatsby：
-  ![Alt text](./image-1.png)
+  ![Alt text](/image-1.png)
   - 其實 CRA 放棄沒放棄，關系也不是特別大，反正也可以暴露了 webpack 配置，但需要自己定制的內容太多，而且並沒不能完全的去體現出 React 的能力，比如不支持服務端渲染，也不支持 React 18 中的 Serevr Component/Client Component/Shared Component 等等新概念，因此 CRA 還是會逐漸被 Next.js 或者Gatsby.js 給逐漸取代，不過 Next.js 比 Gatsby.js 的擴展性更好，基本上 Gatsby.js 可以做的，Next.js 都可以做，反過來卻不行。
   - CAR 的結果如此，後續的前端開發的方向應該會更偏向 Next.js ，不過這些主要是在C端或者B工程的市場會表現更好，在不那麽重視首屏性能的管理端應用來說，影響不會那麽大。
 
