@@ -119,5 +119,5 @@ Next.js 除了頁面默認靜態化（不使用getServerSideProps/getStaticPath/
   - 其實 CRA 放棄沒放棄，關系也不是特別大，反正也可以暴露了 webpack 配置，但需要自己定制的內容太多，而且並沒不能完全的去體現出 React 的能力，比如不支持服務端渲染，也不支持 React 18 中的 Serevr Component/Client Component/Shared Component 等等新概念，因此 CRA 還是會逐漸被 Next.js 或者Gatsby.js 給逐漸取代，不過 Next.js 比 Gatsby.js 的擴展性更好，基本上 Gatsby.js 可以做的，Next.js 都可以做，反過來卻不行。
   - CAR 的結果如此，後續的前端開發的方向應該會更偏向 Next.js ，不過這些主要是在C端或者B工程的市場會表現更好，在不那麽重視首屏性能的管理端應用來說，影響不會那麽大。
 
-## Reference
+## source
 - https://juejin.cn/post/7206261082452639802
