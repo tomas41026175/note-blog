@@ -1,3 +1,4 @@
+# BabylonJs 加入場景 & 材質
 - 加入場景
     - 使用Async function + .then/.catch的方式 
     - 放在CreateSence裡面
