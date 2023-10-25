@@ -22,5 +22,11 @@
 		"theme": {
 			"layout": "full"
 		}
+	},
+	"Software-design-principles": {
+		"title": "軟體設計原則",
+		"theme": {
+			"layout": "full"
+		}
 	}
 }
