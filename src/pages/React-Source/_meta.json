@@ -1,0 +1,8 @@
+{
+  "build-own-react(building)": {
+    "title": "Review",
+    "theme": {
+      "layout": "full"
+    }
+  }
+}
