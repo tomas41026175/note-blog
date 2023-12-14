@@ -1,5 +1,8 @@
 {
-	"event-loop": {
-		"title": "事件循環"
-	}
+  "event-loop": {
+    "title": "事件循環",
+    "theme": {
+      "layout": "full"
+    }
+  }
 }
