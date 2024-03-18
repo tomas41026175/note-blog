@@ -12,4 +12,4 @@
 -   優化動畫：使用 requestAnimationFrame 來進行動畫，而不是 setTimeout 或 setInterval。
 -   減少重繪和重排：避免頻繁的 DOM 和 CSS 變更，以減少瀏覽器的重繪和重排次數。
 
-![Alt text](image-1.png)
+![Alt text](./image-1.png)

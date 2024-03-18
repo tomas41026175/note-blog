@@ -141,7 +141,7 @@ const element = MyReact.createElement(
 ```
 
 <!-- transformed -->
-<!-- 只要有加上 /**@jsx MyReact.createElement */ 這段 babel 在編譯的時候會優先使用我們自訂的 createElement -->
+### 只要有加上 /**@jsx MyReact.createElement **/ 這段 babel 在編譯的時候會優先使用我們自訂的 createElement
 
 ```js
 /**@jsx MyReact.createElement */
@@ -296,7 +296,7 @@ MyReact.render(
 );
 ```
 
-![Fiber Tree](image.png)
+![Fiber Tree](./image.png)
 
 在 render function 中，我們將創建 root fiber & 把它放進 nextUnitOfWork，其餘的工作將被放進 performUnitWork，我們需要為所有的 fiber 元素做 3 件事情。
 
@@ -310,7 +310,7 @@ Traverse 方式 :
 1. 檢查是否有子 Fiber（children）：如果有，則開始處理第一個子 Fiber。
 2. 檢查兄弟 Fiber：如果目標 Fiber 沒有子 Fiber，但有兄弟 Fiber，則移動到兄弟 Fiber 並開始處理。
 3. 回到父 Fiber：如果目標 Fiber 沒有子 Fiber 也沒有兄弟 Fiber，則回到其父 Fiber，並從父 Fiber 的兄弟 Fiber 繼續遍歷，直到找到下一個要處理的 Fiber。
-   ![Fiber Tree - 2](image-1.png)
+   ![Fiber Tree - 2](./image-1.png)
 
 接下來更新 render function
 

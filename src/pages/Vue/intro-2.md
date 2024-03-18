@@ -44,10 +44,10 @@ v-xxx 開頭的為各式指令
 舉例 2：v-bind: 省略 v-bind
 
 ```javascript=
-<img v-bind:src="imageSrc" />
+<img v-bind:src="./imageSrc" />
 
 // 縮寫
-<img :src="imageSrc" />
+<img :src="./imageSrc" />
 ```
 
 ### 參考資料＋圖片來源

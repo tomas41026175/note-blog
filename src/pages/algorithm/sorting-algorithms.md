@@ -149,7 +149,7 @@ const selectionSort = arr => {
 
 -   divide and conquer ( 分而治之 )
 -   將需要排序的 array 分割 在合併的時候 透過 pointer 比對兩個 array 的元素 比較小的放入新的 array 。
--   ![merge sort](image.png)
+-   ![merge sort](./image.png)
 
 ## pseudo code
 

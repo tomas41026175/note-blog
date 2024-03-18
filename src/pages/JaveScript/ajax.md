@@ -112,13 +112,13 @@ xhr.onload =()=>{
         const response = xhr.responseXML;
         const events = response.getElementByTagName("event")
             for(i=0;i<events.length;i++){    利用迴圈尋訪每個活動元件
-                const container, image, location, city, newline;    宣告變數
+                const container, ./image, location, city, newline;    宣告變數
                 container = document.createElement("div");    建立div容器
                 container. className "event";    替容器class屬性添加event屬性
                 
-                image = document.creatElement("img");    加入地圖影像
-                image.setAttribute("src", (getNodeValue(event[i],'map')))
-                image.appendChild(image);
+                ./image = document.creatElement("img");    加入地圖影像
+                ./image.setAttribute("src", (getNodeValue(event[i],'map')))
+                ./image.appendChild(./image);
                 
                 location = document.crea)teElement('p');    加入位置資料
                 city = document.createElement('b');
@@ -175,7 +175,7 @@ CORS可以用來開啟以下類型的跨站請求
 1. 使用 XMLHttpRequest 或 Fetch API 進行跨站請求，如前所述。
 2. 網頁字體（跨網域 CSS 的 @font-face 的字體用途），所以伺服器可以佈署 TrueType 字體，並限制只讓信任的網站跨站載入。
 3. WebGL 紋理。
-4. 以 drawImage 繪製到 Canvas 畫布上的圖形／影片之影格。
+4. 以 draw./image 繪製到 Canvas 畫布上的圖形／影片之影格。
 5. CSS 樣式表（讓 CSSOM 存取）。
 6. 指令碼（for unmuted exceptions）。
 

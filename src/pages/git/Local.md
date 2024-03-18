@@ -67,7 +67,7 @@ merge bugFix
 git merge  bugFix
 ```
 
-![merge bugFix](image.png)
+![merge bugFix](./image.png)
 
 merge main to bugFix
 
@@ -83,7 +83,7 @@ git checkout main;
 git merge bugFix;
 ```
 
-![Alt text](image-1.png)
+![Alt text](./image-1.png)
 
 ## rebase ( 另一種合併方式 )
 
@@ -118,7 +118,7 @@ git rebase -i main //從目前的位置到 main 中間的所有 commit
 -   合併多個提交：使用 squash 或 fixup 來合併提交。
 -   修改提交訊息：使用 reword 來更改提交訊息。
 -   編輯提交的內容：使用 edit 來修改提交的內容。
-    ![Alt text](image-9.png)
+    ![Alt text](./image-9.png)
 
 ### 常用於 :
 
@@ -167,7 +167,7 @@ HEAD -> main -> C1
 git checkout C1
 ```
 
-![Alt text](image-2.png)
+![Alt text](./image-2.png)
 
 執行上面的 code 之後， HEAD 會直接指向 C1 而不是跟隨 main
 
@@ -218,8 +218,8 @@ git branch -f main C6
 git reset HEAD~1
 ```
 
-![Alt text](image-4.png)
-![Alt text](image-3.png)
+![Alt text](./image-4.png)
+![Alt text](./image-3.png)
 
 `git revert` :為了取消修改並且把這個狀態分享給別人，我們需要使用 git revert。
 
@@ -227,8 +227,8 @@ git reset HEAD~1
 git revert HEAD
 ```
 
-![Alt text](image-5.png)
-![Alt text](image-6.png)
+![Alt text](./image-5.png)
+![Alt text](./image-6.png)
 
 差異在於:
 新的 commit C2' 引入了修改——用來表示我們取消 C2 這個 commit 的修改。
@@ -270,13 +270,13 @@ diff:
 當想要複製幾個 commit 並接在目前的 HEAD 下方
 用法 : 在當前位置 選取想要添加的 commit
 origin:
-![Alt text](image-7.png)
+![Alt text](./image-7.png)
 
 ```
 git cherry-pick C2 C4
 ```
 
-![Alt text](image-8.png)
+![Alt text](./image-8.png)
 
 透過 cherry-pick 複製 C2 & C4 到 main 下方
 
@@ -296,9 +296,9 @@ git branch -f main bugFix //將 main 移動至 合併後的 bugFix 位置
 ## commit 的戲法
 
 情境 :
-假設已經在 newImage branch 上做了一些 commit，然後又開了一個 branch 叫做 caption ，並且在上面做了一些相關的 commit ，因此它們看起來是一個接著一個的。
+假設已經在 new./image branch 上做了一些 commit，然後又開了一個 branch 叫做 caption ，並且在上面做了一些相關的 commit ，因此它們看起來是一個接著一個的。
 
-有點棘手的就是有時候你又想在之前的 commit 裡面做一些修改。在這個例子裡面，我們要去稍微修改一下 newImage 所指向的 commit，儘管已經是之前的 commit 了 。
+有點棘手的就是有時候你又想在之前的 commit 裡面做一些修改。在這個例子裡面，我們要去稍微修改一下 new./image 所指向的 commit，儘管已經是之前的 commit 了 。
 
 解決方案 :
 先用 git rebase -i 將 commit 重新排序，然後把我們想要修改的 commit 移到最前面
@@ -317,9 +317,9 @@ git rebase caption main //將 caption 分支上的變更合併至 main
 情境 :
 當使用前面的方式，進行大量操作的時候，會有 rebase -i 後不一定記得位置的問題。
 
-![Alt text](image-10.png)
+![Alt text](./image-10.png)
 
-![Alt text](image-11.png)
+![Alt text](./image-11.png)
 
 修改一個 commit 叫做 C2，但你要避免使用 rebase -i
 
@@ -356,7 +356,7 @@ output
 git tag v2 C3
 ```
 
-![Alt text](image-12.png)
+![Alt text](./image-12.png)
 
 git describe main:
 
@@ -373,31 +373,31 @@ v2_1_gC4
 ## rebase 多個 branch
 
 情境 : 透過 rebase 進行不同 branch 的排序
-![Alt text](image-13.png)
+![Alt text](./image-13.png)
 
 ```
 git rebase main bugFix
 ```
 
-![Alt text](image-14.png)
+![Alt text](./image-14.png)
 
 ```
 git rebase bugFix side
 ```
 
-![Alt text](image-15.png)
+![Alt text](./image-15.png)
 
 ```
 git rebase side another
 ```
 
-![Alt text](image-16.png)
+![Alt text](./image-16.png)
 
 ```
 git rebase another main
 ```
 
-![Alt text](image-17.png)
+![Alt text](./image-17.png)
 
 ## 選擇 parent commit
 
@@ -411,17 +411,17 @@ git 預設 merge 後選擇第一個 parent commit
 git checkout HEAD^
 ```
 
-![Alt text](image-18.png)
+![Alt text](./image-18.png)
 
 ```
 git checkout HEAD^2
 ```
 
-![Alt text](image-19.png)
+![Alt text](./image-19.png)
 
 ---
 
-![Alt text](image-20.png)
+![Alt text](./image-20.png)
 
 ```
  git checkout HEAD~;
@@ -429,7 +429,7 @@ git checkout HEAD^2
  git checkout HEAD~2
 ```
 
-![Alt text](image-21.png)
+![Alt text](./image-21.png)
 
 ### 組合
 
@@ -447,8 +447,8 @@ git checkout HEAD^2
 
 ### test
 
-![Alt text](image-22.png)
-![Alt text](image-23.png)
+![Alt text](./image-22.png)
+![Alt text](./image-23.png)
 
 ```
 git checkout main^^2^ //從 main 往上一層的第二個分支在往上一層
@@ -468,8 +468,8 @@ git branch bugWork main^^2^ //在從 main 往上一層的第二個分支在往�
 現在我們的 main branch 是比 one two 和 three 這三個 branch 多了幾個 commit。由於某種原因，我們需要將 main 所新增的幾個 commit 套用到其它三個 branch 上面。
 
 one branch 需要重新排序和取消 C5 這一個 commit， two 需要完全重排，而 three 只需要再一個 commit。
-![Alt text](image-24.png)
-![Alt text](image-25.png)
+![Alt text](./image-24.png)
+![Alt text](./image-25.png)
 
 ```
 git checkout one
