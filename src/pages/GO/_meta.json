@@ -1,5 +1,14 @@
 {
   "placeholder": {
     "title": "placeholder"
+  },
+  "keyword": {
+    "title": "keyword"
+  },
+  "variable": {
+    "title": "variable"
+  },
+  "baseType": {
+    "title": "baseType"
   }
 }
