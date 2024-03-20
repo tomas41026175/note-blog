@@ -1,32 +1,35 @@
 {
-	"Currying&Composition": {
-		"title": "柯里化(Currying)、函式合成(Function Composition)",
-		"theme": {
-			"layout": "full"
-		}
-	},
-	"why-use-FP": {
-		"title": "為何使用Functional Programming",
-		"theme": {
-			"layout": "full"
-		}
-	},
-	"design-pattern-in-fp": {
-		"title": "FP中常見的design pattern",
-		"theme": {
-			"layout": "full"
-		}
-	},
-	"Immutability&loop": {
-		"title": "Immutability , 迴圈&遞迴",
-		"theme": {
-			"layout": "full"
-		}
-	},
-	"Pure-Function": {
-		"title": "Pure Function (純函數)",
-		"theme": {
-			"layout": "full"
-		}
-	}
+  "Currying&Composition": {
+    "title": "柯里化(Currying)、函式合成(Function Composition)",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "why-use-FP": {
+    "title": "為何使用Functional Programming",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "design-pattern-in-fp": {
+    "title": "FP中常見的design pattern",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "Immutability&loop": {
+    "title": "Immutability , 迴圈&遞迴",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "Pure-Function": {
+    "title": "Pure Function (純函數)",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "Monad": {
+    "title": "Monad"
+  }
 }

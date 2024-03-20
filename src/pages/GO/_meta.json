@@ -10,5 +10,14 @@
   },
   "baseType": {
     "title": "baseType"
+  },
+  "tips": {
+    "title": "tips"
+  },
+  "flowContorl&Func": {
+    "title": "flowContorl&Func"
+  },
+  "struct": {
+    "title": "struct"
   }
 }
