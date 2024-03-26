@@ -23,7 +23,6 @@ const expandAroundCenter = (s:string,l:number,r:number):number=>{
     }
     return r - l - 1
 }
-
 ```
 
 Manacher’s Algorithm :

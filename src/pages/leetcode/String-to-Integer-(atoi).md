@@ -1,4 +1,4 @@
-# 8. String to Integer (atoi)
+# 8. String to Integer (atoi) - medium
 
 思路 : 若不是數字回傳 0 ， 設定數字上下限 +- 2147483647，透過 parseInt 將 input 轉換成整數
 
